@@ -1,0 +1,11 @@
+:root {
+  --color-main: #5d48b7;
+}
+
+/* Btns */
+
+.text-main {
+  color: var(--color-main);
+}
+
+:
