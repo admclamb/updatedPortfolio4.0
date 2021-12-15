@@ -15,29 +15,345 @@
     />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/ca5ff7f812.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Fade In effects -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>Anthony Mclamb | Front-end Developer</title>
   </head>
   <body>
     <header class="header">
       <div id="particles-js">
-        <div class="hero-container text-light">
-          <h1 class="display-2">Hello,</h1>
-          <h1>Im Anthony Mclamb</h1>
-          <p>I make websites with <i class="far fa-heart ms-1"></i></p>
-          <button class="btn btn-light">My Projects</button>
-          <button class="btn btn-outline-light">Learn More</button>
+        <div class="hero-container text-light align-items-center text-center">
+          <h1 class="display-4 animate__animated animate__fadeInUp">
+            Lets make something unique
+          </h1>
+          <p class="hero hero--sub animate__animated animate__fadeInUp">
+            I make websites with <i class="far fa-heart ms-1"></i>
+          </p>
+          <button
+            class="
+              btn btn-outline-light btn-lg
+              hero--sub-sm
+              animate__animated animate__fadeInUp
+            "
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </header>
+    <main>
+      <!-- Navbar in main for sticky top -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Anthony</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <nav class="navbar nav bg-light sticky-top">
+        <a class="navbar-brand text-main" href="#">Anthony.io</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto justify-content-end sticky-top">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <!-- About -->
+      <section class="about container">
+        <!-- Background -->
+        <h2
+          class="about-bg-text rellax"
+          data-rellax-speed="5"
+          data-rellax-percentage="0.5"
+        >
+          hello
+        </h2>
+        <!-- Background -->
+        <div class="col col-md-6">
+          <h2 class="text-main">Hello,</h2>
+          <p class="about-p">
+            Im Anthony Mclamb, I'm a front-end web developer based out of
+            Wilmington NC/Raliegh NC. I specialize in making responsive,
+            beautiful websites, and I put a lot of care into my work.
+          </p>
+
+          <p class="questions">
+            Have a question? <a href="#" class="text-main">Click here</a> to
+            contact me!
+          </p>
+        </div>
+        <div class="col"></div>
+      </section>
+      <br />
+
+      <br />
+      <!-- Projects -->
+      <section class="section projects">
+        <h2 class="container text-main mb-4">Work,</h2>
+        <div class="container">
+          <!-- Background text -->
+          <h2
+            class="project-bg-text rellax"
+            data-rellax-speed="5"
+            data-rellax-percentage="0.5"
+          >
+            work
+          </h2>
+          <!-- Background text -->
+          <div class="row">
+            <div class="col col-md-3 project-side">
+              <ul class="list-group project-list sticky-top">
+                <li
+                  class="list-group-item bg-main project-1"
+                  aria-current="true"
+                >
+                  <a href="#project-1">Project One</a>
+                </li>
+                <li class="list-group-item project-2">
+                  <a href="#project-2">Project Two</a>
+                </li>
+                <li class="list-group-item project-3">
+                  <a href="#project-3">Project Three</a>
+                </li>
+                <li class="list-group-item project-4">
+                  <a href="#project-4">Project Four</a>
+                </li>
+                <li class="list-group-item project-5">
+                  <a href="#project-5">Project Five</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-md-9 projects">
+              <div class="row project project-1" id="project-1">
+                <h2 class="mb-4">Project 1</h2>
+                <img src="img/RollingStone3.jpg" alt="" />
+                <p class="mt-4 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  sequi provident voluptatem, praesentium voluptas dolorum
+                  laboriosam? Tempore tenetur unde porro, corporis odit rerum,
+                  voluptates quidem explicabo eum at totam! Eius?
+                </p>
+                <div class="">
+                  <a href="#" class="btn btn-dark">Code</a>
+                  <a href="#" class="btn btn-dark">Preview</a>
+                </div>
+              </div>
+              <div class="row project project-2" id="project-2">
+                <h2 class="mb-4">Project 2</h2>
+                <img src="img/V500.jpg" alt="" />
+                <p class="mt-4 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  sequi provident voluptatem, praesentium voluptas dolorum
+                  laboriosam? Tempore tenetur unde porro, corporis odit rerum,
+                  voluptates quidem explicabo eum at totam! Eius?
+                </p>
+                <div class="">
+                  <a href="#" class="btn btn-dark">Code</a>
+                  <a href="#" class="btn btn-dark">Preview</a>
+                </div>
+              </div>
+              <div class="row project project-3" id="project-3">
+                <h2 class="mb-4">Project 3</h2>
+                <img src="img/Variety2.jpg" alt="" />
+                <p class="mt-4 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  sequi provident voluptatem, praesentium voluptas dolorum
+                  laboriosam? Tempore tenetur unde porro, corporis odit rerum,
+                  voluptates quidem explicabo eum at totam! Eius?
+                </p>
+                <div class="">
+                  <a href="#" class="btn btn-dark">Code</a>
+                  <a href="#" class="btn btn-dark">Preview</a>
+                </div>
+              </div>
+              <div class="row project project-3" id="project-4">
+                <h2 class="mb-4">Project 4</h2>
+                <img src="img/Variety2.jpg" alt="" />
+                <p class="mt-4 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  sequi provident voluptatem, praesentium voluptas dolorum
+                  laboriosam? Tempore tenetur unde porro, corporis odit rerum,
+                  voluptates quidem explicabo eum at totam! Eius?
+                </p>
+                <div class="">
+                  <a href="#" class="btn btn-dark">Code</a>
+                  <a href="#" class="btn btn-dark">Preview</a>
+                </div>
+              </div>
+              <div class="row project project-3" id="project-5">
+                <h2 class="mb-4">Project 5</h2>
+                <img src="img/Variety2.jpg" alt="" />
+                <p class="mt-4 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  sequi provident voluptatem, praesentium voluptas dolorum
+                  laboriosam? Tempore tenetur unde porro, corporis odit rerum,
+                  voluptates quidem explicabo eum at totam! Eius?
+                </p>
+                <div class="">
+                  <a href="#" class="btn btn-dark">Code</a>
+                  <a href="#" class="btn btn-dark">Preview</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <section class="contact d-flex flex-column align-items-center">
+        <h2 class="text-center">Lets Get in touch!</h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!-- <div class="container">
+          <form class="contact-form container">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault01"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02" class="form-label"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="Phone"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefaultUsername" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="validationDefaultUsername"
+                aria-describedby="inputGroupPrepend2"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="col-md-4 mb-0">
+              <label for="message"></label>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div> -->
+      </section>
+    </main>
     <!-- Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/"></script>
+    <!-- rellax -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax(".rellax", {
+        horizontal: true,
+        // center: true
+        callback: function (position) {},
+      });
+    </script>
     <!-- Particles -->
     <script src="particles.min.js"></script>
     <script src="js/app.js"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ca5ff7f812.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS for projects -->
+    <script src="js/projects.js"></script>
   </body>
 </html>

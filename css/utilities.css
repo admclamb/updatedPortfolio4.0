@@ -1,5 +1,12 @@
 :root {
   --color-main: #5d48b7;
+  --color-main--hover: #4a3896;
+  --color-gray: #f6f5ff;
+  --color-black: #222;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 /* Btns */
@@ -8,4 +15,31 @@
   color: var(--color-main);
 }
 
-:
+.text-main:hover {
+  color: var(--color-main--hover);
+}
+
+/* Navbar */
+.nav-link .active {
+  color: var(--color-main);
+}
+.nav li a:hover {
+  color: var(--color-main--hover);
+}
+
+.nav li a {
+  color: #222;
+}
+
+nav {
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 100;
+}
+
+/* bg */
+
+.bg-main {
+  background-color: var(--color-main);
+  color: #fff;
+}
